@@ -1,0 +1,8 @@
+<h2 class="p-3">products List</h2>
+<ul class="list-group mt-3" *ngFor='let product of products'>
+  <li class="list-group-item" style="background-color: #eee;"><h3 class="d-inline">Product :</h3> <span>{{product.id}}</span></li>
+  <li class="list-group-item"><h3 class="d-inline">Title  :  </h3> <span>{{product.title}}</span></li>
+  <li class="list-group-item"><h3 class="d-inline">Price :  </h3><span>{{product.price}} </span></li>
+  <li class="list-group-item"><h3 class="d-inline">Category  :</h3> <span> {{product.category}}</span></li>
+  <li class="list-group-item text-end"><button type="button" class="btn btn-info" routerLink ='/Products-Details/{{ product.id}}'>View Details</button></li>
+</ul>

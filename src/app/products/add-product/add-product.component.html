@@ -1,0 +1,22 @@
+<h2>Add new product</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="card p-4" >
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Title</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="title" placeholder="Title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Price</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1"formControlName="price" placeholder="Price">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="description" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">category</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="category" placeholder="category">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
